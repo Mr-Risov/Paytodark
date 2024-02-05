@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Outfit"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>QR Code Redesigned</title>
+  </head>
+  <body>
+    <main>
+     
+      <section class="card">
+         
+        <img id="qr">
+
+       <script>
+        // Array of image URLs
+        var images = [
+            "https://i.ibb.co/zH9xKKm/IMG-20240204-161156.jpg",
+            "https://i.ibb.co/bgPnky8/gooey-ai-An-analogue-film-still-of-an-astronau-eets-of-Mumbai-golden-light-on-the-astronaut-4kn.png"
+        ];
+
+        // Function to change the image every 3 seconds
+        function changeImage() {
+            // Get a random index
+            var randomIndex = Math.floor(Math.random() * images.length);
+
+            // Get the image element by ID
+            var imgElement = document.getElementById("qr");
+
+            // Set the source attribute of the image
+            imgElement.src = images[randomIndex];
+        }
+
+        // Change the image every 3 seconds
+        setInterval(changeImage, 3000);
+    </script>
+
+        
+        <h1>click 👇 here to pay me</h1>
+
+        <button onclick="window.location.href='http://tinyurl.com/Paytodark'" class="button">Click me</button>
+
+
+        <h1>Improve your frontend skills by building projects</h1>
+
+        <div class="upi">
+          <img src="https://i.ibb.co/t49DXqw/upi-icon.png" style="height: 40px;">
+          <img src="https://i.ibb.co/XsDKTDN/paytm-icon.png"  style="height: 20px;">
+          <img src="https://i.ibb.co/9rM3QDr/phonepe-logo-icon.png"  style="height: 20px;">
+          <img src="https://i.ibb.co/5ccgwm0/google-pay-icon.png"  style="height: 20px;">
+        </div>
+
+        <div class="container">
+          <p>scan the QR code to</p><img src="https://i.ibb.co/VqqTN3K/download.png" style="height: 80px; width: 200px;">
+        </div>
+       
+        <div class="attribution">
+          Coded by <a href="https://github.com/Mr-Risov ">Risov kemprai</a>
+        </div>
+       
+      </section>
+
+
+      
+    </main>
+  </body>
+</html>
